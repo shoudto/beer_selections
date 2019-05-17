@@ -1,6 +1,8 @@
-require "beer_selections/version"
+require 'pry'
+require 'nokogiri'
+require 'open-uri'
 
-module BeerSelections
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./beer_selections/version"
+require_relative "./beer_selections/beer"
+require_relative "./beer_selections/cli"
+require_relative "./beer_selections/scraper"
