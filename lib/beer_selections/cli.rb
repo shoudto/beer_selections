@@ -15,10 +15,13 @@ class Cli
       beer_list = doc.css("tr")
       
       beer_list.each do |beer|
-        beer_name = beer.css("a").text
+        
        # link = beer.css('a').attr('href').value
-       binding.pry 
+       
+       brew = Beer.new 
+       brew.name = beer.css("a").text
     end
+      binding.pry 
   end 
   
   def print_beers
