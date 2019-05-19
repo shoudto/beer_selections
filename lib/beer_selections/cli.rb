@@ -19,9 +19,11 @@ class Cli
      # binding.pry 
       Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].brewer
        puts " "
-       puts Beer.all[input.to_i-1].name
-       puts Beer.all[input.to_i-1].company
-       puts Beer.all[input.to_i-1].style 
+       puts "Beer: #{Beer.all[input.to_i-1].name}" # Beer.all[input.to_i-1].name
+       puts "--------------------------------------------------------------------------------"
+       puts "Beer Company: #{Beer.all[input.to_i-1].company}" # Beer.all[input.to_i-1].company
+       puts  "-------------------------------------------------------------------------------"
+       puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
        puts " "
     end 
   end 
