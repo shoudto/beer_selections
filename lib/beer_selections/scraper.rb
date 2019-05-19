@@ -21,6 +21,6 @@ class Scraper
     doc = Nokogiri::HTML(html)
     beer.company = doc.css("div #info_box a")[0].text
     beer.style = doc.css("div #info_box a")[4].text
-    binding.pry 
+   # binding.pry 
   end 
 end 

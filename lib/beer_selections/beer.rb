@@ -1,6 +1,6 @@
 class Beer 
   
-  attr_accessor :name, :url, :company, :style, :brewer, :abv  
+  attr_accessor :name, :url, :company, :style, :brewer  
   
   @@all = []
   

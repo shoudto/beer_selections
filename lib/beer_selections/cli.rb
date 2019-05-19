@@ -15,8 +15,12 @@ class Cli
       puts "Choose your appealing BEER! for more info?"
       puts "Enter a number or type 'exit' to exit."
       puts " "
-      input = gets.strip 
+      input = gets.strip
+     # binding.pry 
       Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].brewer 
+       puts Beer.all[input.to_i-1].name
+       puts Beer.all[input.to_i-1].company
+       puts " "
     end 
   end 
   
