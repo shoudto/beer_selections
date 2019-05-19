@@ -19,9 +19,8 @@ class Scraper
   def self.scrape_beer_details(beer)
     html = open("https://www.beeradvocate.com#{beer.url}")
     doc = Nokogiri::HTML(html)
-    binding.pry
     beer.company = doc.css("div #info_box a")[0].text
     beer.style = doc.css("div #info_box a")[4].text
-    
+    binding.pry 
   end 
 end 
