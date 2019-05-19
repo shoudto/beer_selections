@@ -11,9 +11,12 @@ class Cli
     
     html = open("https://www.beeradvocate.com/lists/top/")
     doc = Nokogiri::HTML(html)
-    doc.css("tr").each do |beer|
-      text = beer.css("a").text
-      url = beer..css("a").attr('href').value
+    
+      beer_list = doc.css("tr")
+      
+      beer_list.each do |beer|
+        beer_name = beer.css("a").text
+       # link = beer.css('a').attr('href').value
        binding.pry 
     end
   end 
