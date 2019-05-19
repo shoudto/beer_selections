@@ -17,7 +17,7 @@ class Scraper
   end 
   
   def self.scrape_beer_details(beer)
-    html = open("https://www.beeradvocate.com/lists/top/#{beer.url}")
+    html = open("https://www.beeradvocate.com#{beer.url}")
     doc = Nokogiri::HTML(html)
     binding.pry
   end 
