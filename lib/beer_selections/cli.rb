@@ -17,9 +17,11 @@ class Cli
       puts " "
       input = gets.strip
      # binding.pry 
-      Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].brewer 
+      Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].brewer
+       puts " "
        puts Beer.all[input.to_i-1].name
        puts Beer.all[input.to_i-1].company
+       puts Beer.all[input.to_i-1].style 
        puts " "
     end 
   end 
