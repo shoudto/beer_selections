@@ -8,8 +8,14 @@ class Cli
     puts "------------------"
     puts "      "
     
-    html = open("https://www.beeradvocate.com/lists/top/")
-    doc = Nokogiri::HTML(html)
-    binding.pry 
+    input = ""
+    while input != "exit" do 
+      puts "Which beer would you like to learn about?"
+      puts "Enter the beer number or type 'exit' if you wish not to choose."
+      input = gets.strip
+    end 
+    # html = open("https://www.beeradvocate.com/lists/top/")
+    # doc = Nokogiri::HTML(html)
+    # binding.pry 
   end 
 end 

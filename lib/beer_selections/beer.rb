@@ -1,11 +1,10 @@
 class Beer 
   
-  attr_accessor :name, :type, :price, :url  
+  attr_accessor :name, :url, :ratings, :score   
   
   @@all = []
   
   def initialize
-    @name = name
     @@all << self 
   end 
   
