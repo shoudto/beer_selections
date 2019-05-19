@@ -4,9 +4,9 @@ class Cli
   #  binding.pry 
     puts "Welcome Beer Lovers!"
     puts "Here's a list of Top Craft Beers!"
-    puts "      "
+    puts " "
     puts "------------------"
-    puts "      "
+    puts " "
     
     Scraper.scrape_beer_list
     print_beers
@@ -25,6 +25,5 @@ class Cli
       puts "#{index}. #{beer.name}"
     end
     puts " "
-  #  binding.pry 
   end 
 end 
