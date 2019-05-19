@@ -15,7 +15,7 @@ class Cli
       puts "Choose your appealing BEER! for more info?"
       puts "Enter a number or type 'exit' to exit."
       input = gets.strip
-      
+    #  Scraper.beer_list(Beer.all[input-1]) if !
     end 
   end 
   
