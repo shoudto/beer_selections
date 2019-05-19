@@ -14,8 +14,9 @@ class Cli
     while input != "exit" do 
       puts "Choose your appealing BEER! for more info?"
       puts "Enter a number or type 'exit' to exit."
-      input = gets.strip
-    #  Scraper.beer_list(Beer.all[input-1]) if !
+      puts " "
+      input = gets.strip 
+      Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].brewer 
     end 
   end 
   
@@ -23,5 +24,7 @@ class Cli
      Beer.all.each.with_index(1) do |beer, index|
       puts "#{index}. #{beer.name}"
     end
+    puts " "
+  #  binding.pry 
   end 
 end 

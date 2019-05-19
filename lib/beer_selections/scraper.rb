@@ -7,16 +7,18 @@ class Scraper
     
       beer_list = doc.css("tr")
       
-      beer_list.each do |beer|
-        
-       # link = beer.css('a').attr('href').value
-       
+      beer_list.drop(2).each do |beer|
+    
        brew = Beer.new 
        brew.name = beer.css("a").text
+       brew.url = beer.css("a").attr('href').value
+  
     end
   end 
   
   def self.scrape_beer_details(beer)
-    
+    html = open("https://www.beeradvocate.com/lists/top/#{beer.url}")
+    doc = Nokogiri::HTML(html)
+    binding.pry
   end 
 end 
