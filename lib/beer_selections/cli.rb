@@ -9,10 +9,19 @@ class Cli
     puts "      "
     
     Scraper.scrape_beer_list
-      binding.pry 
+    print_beers
+    input = ""
+    while input != "exit" do 
+      puts "Choose your appealing BEER! for more info?"
+      puts "Enter a number or type 'exit' to exit."
+      input = gets.strip
+      
+    end 
   end 
   
   def print_beers
-    
+     Beer.all.each.with_index(1) do |beer, index|
+      puts "#{index}. #{beer.name}"
+    end
   end 
 end 
