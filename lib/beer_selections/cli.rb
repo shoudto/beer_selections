@@ -18,4 +18,8 @@ class Cli
     # doc = Nokogiri::HTML(html)
     # binding.pry 
   end 
+  
+  def print_beers
+    
+  end 
 end 
