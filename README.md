@@ -9,16 +9,16 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'beer_selections'
+git clone git@github.com:shoudto/beer_selections.git
 ```
 
 And then execute:
 
-    $ bundle
+    $ gem install pry
 
-Or install it yourself as:
+And then run it:
 
-    $ gem install beer_selections
+    $ ruby bin/beers
 
 ## Usage
 
