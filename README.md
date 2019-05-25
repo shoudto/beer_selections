@@ -16,8 +16,9 @@ And then execute:
 
     $ gem install pry
 
-And then run it:
+And then change the both and run it:
 
+    $ cd beer_selections/
     $ ruby bin/beers
 
 ## Usage
