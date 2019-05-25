@@ -16,7 +16,7 @@ And then execute:
 
     $ gem install pry
 
-And then change the both and run it:
+And then change the path and run it:
 
     $ cd beer_selections/
     $ ruby bin/beers
