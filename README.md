@@ -1,6 +1,6 @@
 # BeerSelections
 
-This Ruby gem provides a CLI to view details about craft beers as per the beer advocate website.
+This Ruby Gem provides a CLI to view the Top 250 Craft Beers on Beer Advocate website!
 
 ## Installation
 
