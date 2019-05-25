@@ -23,8 +23,8 @@ class Cli
       puts " "
       
       input = gets.strip.downcase
-      Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].company
-      unless input == 'exit'
+      
+      if (1..250).include?(input.to_i) 
       puts " "
       puts "Beer: #{Beer.all[input.to_i-1].name}" # Beer.all[input.to_i-1].name
       puts "--------------------------------------------------------------------------------"
@@ -32,9 +32,14 @@ class Cli
       puts  "-------------------------------------------------------------------------------"
       puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
       puts " "
-      puts "#{Beer.all[input.to_i-1].beer_info}"
-      end # end of the conditional unless
-    end # end of while loop
+     # puts "#{Beer.all[input.to_i-1].beer_info}"
+     # puts " "
+      elsif input != "exit"
+        puts " "
+        puts "INVALID! please try again."
+        puts " "
+    end 
+   end 
   end 
   
   def print_beers
