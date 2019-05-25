@@ -1,29 +1,24 @@
 # BeerSelections
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/beer_selections`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This Ruby gem provides a CLI to view details about craft beers as per the beer advocate website.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-git clone git@github.com:shoudto/beer_selections.git
-```
+gem 'beer_selections'
 
 And then execute:
 
-    $ gem install pry
+    $ bundle
 
-And then change the path and run it:
+Or install it yourself as:
 
-    $ cd beer_selections/
-    $ ruby bin/beers
+    $ gem beer_selections/
 
 ## Usage
 
-TODO: Write usage instructions here
+$ beer_selections
 
 ## Development
 
