@@ -24,14 +24,15 @@ class Cli
       
       input = gets.strip.downcase
       
-      if (1..250).include?(input.to_i) 
-      puts " "
-      puts "Beer: #{Beer.all[input.to_i-1].name}" # Beer.all[input.to_i-1].name
-      puts "--------------------------------------------------------------------------------"
-      puts "Beer Company: #{Beer.all[input.to_i-1].company}" # Beer.all[input.to_i-1].company
-      puts  "-------------------------------------------------------------------------------"
-      puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
-      puts " "
+      if (1..250).include?(input.to_i)
+        Scraper.scrape_beer_details(Beer.all[input.to_i-1])
+        puts " "
+        puts "Beer: #{Beer.all[input.to_i-1].name}" # Beer.all[input.to_i-1].name
+        puts "--------------------------------------------------------------------------------"
+        puts "Beer Company: #{Beer.all[input.to_i-1].company}" # Beer.all[input.to_i-1].company
+        puts  "-------------------------------------------------------------------------------"
+        puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
+        puts " "
      # puts "#{Beer.all[input.to_i-1].beer_info}"
      # puts " "
       elsif input != "exit"

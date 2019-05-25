@@ -12,7 +12,7 @@ class Scraper
        brew = Beer.new 
        brew.name = beer.css("a").text
        brew.url = beer.css("a").attr('href').value
-  
+      
     end
   end 
   
