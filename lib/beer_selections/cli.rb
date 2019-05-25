@@ -34,9 +34,12 @@ class Cli
         puts "-------------------------------------------------------------------------------"
         puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
         puts "-------------------------------------------------------------------------------"
+        puts "#{Beer.all[input.to_i-1].abv}"
+        puts "-------------------------------------------------------------------------------"
         puts "Beer info:"
         puts " "
         puts "#{Beer.all[input.to_i-1].beer_info}"
+        puts " "
         puts " "
         puts "******************NEXT BEER CHOICE********************"
         puts " "

@@ -28,6 +28,8 @@ class Scraper
     info = doc.css("div #info_box")[0].text
     beer.beer_info = info.split(/\n+/).map {|b| b }[9]
     
+    beer.abv = info.split(/\n+/).map {|b| b }[6]
+    
    # binding.pry 
   end 
 end 
