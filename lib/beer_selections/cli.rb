@@ -17,7 +17,7 @@ class Cli
       puts " "
       input = gets.strip
       Scraper.scrape_beer_details(Beer.all[input.to_i-1]) if !Beer.all[input.to_i-1].company
-      
+      unless input == 'exit'
        puts " "
        puts "Beer: #{Beer.all[input.to_i-1].name}" # Beer.all[input.to_i-1].name
        puts "--------------------------------------------------------------------------------"
@@ -25,8 +25,9 @@ class Cli
        puts  "-------------------------------------------------------------------------------"
        puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
        puts " "
-    
-    end 
+       
+      end # end of the conditional unless
+    end # end of while loop
   end 
   
   def print_beers
