@@ -6,8 +6,9 @@ This Ruby gem provides a CLI to view details about craft beers as per the beer a
 
 Add this line to your application's Gemfile:
 
+````
 gem 'beer_selections'
-
+````
 And then execute:
 
     $ bundle
