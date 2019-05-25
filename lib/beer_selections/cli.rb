@@ -29,9 +29,9 @@ class Cli
         Scraper.scrape_beer_details(Beer.all[input.to_i-1])
         puts " "
         puts "Beer: #{Beer.all[input.to_i-1].beer_name}" # Beer.all[input.to_i-1].name
-        puts "--------------------------------------------------------------------------------"
+        puts "-------------------------------------------------------------------------------"
         puts "Beer Company: #{Beer.all[input.to_i-1].company}" # Beer.all[input.to_i-1].company
-        puts  "-------------------------------------------------------------------------------"
+        puts "-------------------------------------------------------------------------------"
         puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
         puts "-------------------------------------------------------------------------------"
         puts "Beer info:"
