@@ -32,7 +32,7 @@ class Cli
       puts  "-------------------------------------------------------------------------------"
       puts "Type of Beer: #{Beer.all[input.to_i-1].style }" # Beer.all[input.to_i-1].style 
       puts " "
-       
+      puts "#{Beer.all[input.to_i-1].beer_info}"
       end # end of the conditional unless
     end # end of while loop
   end 
