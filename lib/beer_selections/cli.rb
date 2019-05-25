@@ -2,10 +2,11 @@ class Cli
   
   def call
   #  binding.pry 
+    puts " "
     puts "Welcome Beer Lovers!"
     puts "Here's a list of Top Craft Beers!"
     puts " "
-    puts "------------------"
+    puts "----------------------------------"
     puts " "
     Scraper.scrape_beer_list
     print_beers
