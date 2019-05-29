@@ -30,6 +30,5 @@ class Scraper
     
     beer.abv = info.split(/\n+/).map {|b| b }[6]
     
-   # binding.pry 
   end 
 end 

@@ -1,7 +1,6 @@
 class Cli 
   
   def call
-  #  binding.pry 
     puts " "
     puts "Welcome Beer Lovers!"
     puts "Here's a list of Top Craft Beers!"
@@ -25,7 +24,7 @@ class Cli
       
       input = gets.strip.downcase
       
-      if (1..250).include?(input.to_i) 
+      if (1..Beer.all.count).include?(input.to_i) 
         Scraper.scrape_beer_details(Beer.all[input.to_i-1])
         puts " "
         puts "Beer: #{Beer.all[input.to_i-1].beer_name}"
