@@ -10,6 +10,8 @@ class Cli
     Scraper.scrape_beer_list
     print_beers
     pick_your_craft
+     binding.pry
+    Beer.find_all_by_name("Kentucky Brunch Brand StoutToppling Goliath Brewing CompanyAmerican ImperialStout")
   end 
   
   
